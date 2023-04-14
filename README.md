@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Simple Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+This is a simple weather app built using Create React App (CRA), Axios, Redux, React-Toastify, TypeScript, and Tailwind CSS. It allows users to search for a city and get the current weather data for that location.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To install this app, first clone this repository to your local machine. Then, navigate to the project directory and run the following command to install the dependencies:
+
+### `npm install`
+
+## Usage
+
+To start the app, run the following command:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This will start the app in development mode and open it in your default browser at [http://localhost:3000](http://localhost:3000).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To search for a city's weather, simply type the city name in the input field and press enter or click on the "Search" button. The app will then fetch the weather data from the OpenWeatherMap API and display it on the page.
 
-### `npm test`
+If there is an error with the API call, such as an invalid city name or network error, the app will display an error message using React-Toastify.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+This app was built using the following technologies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create React App (CRA) for bootstrapping the project
+Axios for making HTTP requests to the OpenWeatherMap API
+Redux for managing the app's state
+React-Toastify for displaying error messages
+TypeScript for type checking and enhanced code readability
+Tailwind CSS for styling the app
