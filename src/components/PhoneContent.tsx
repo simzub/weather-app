@@ -52,58 +52,43 @@ export default function PhoneContent() {
             wind={meterPerSecondConverter(weatherData.days[0].windspeed)}
           />
           <div className="text-sm sm:text-base">
-            <div className="bg-green-100 right-10 sm:right-24 z-10 p-2 relative font-semibold w-full border-2 border-black rounded-lg">
+            <div className="bg-green-100 right-10 text-center h-[92px] sm:right-24 z-10 p-2 relative font-semibold w-full border-2 border-black rounded-lg">
               {`Tomorrow: ${weatherData.days[1].description} `}
               {`Temperature High ${weatherData.days[1].tempmax} `}
               <sup>o</sup>C,
               {` Low ${weatherData.days[1].tempmin} `}
               <sup>o</sup>C.
-              {` Wind speed ${meterPerSecondConverter(weatherData.days[1].windspeed)} m/s.`}
+              {` Wind speed ${meterPerSecondConverter(
+                weatherData.days[1].windspeed
+              )} m/s.`}
             </div>
-            <div className="bg-amber-100 right-7 sm:right-[82px] bottom-[88px] sm:bottom-20  p-2 relative font-semibold w-full border-2 border-black rounded-lg">
-              {`Tomorrow: ${weatherData.days[1].description} `}
-              {`Temperature High ${weatherData.days[1].tempmax} `}
-              <sup>o</sup>C,
-              {` Low ${weatherData.days[1].tempmin} `}
-              <sup>o</sup>C.
-              {` Wind speed ${meterPerSecondConverter(weatherData.days[1].windspeed)} m/s.`}
-            </div>
+            <div className="bg-amber-100 sm:right-[84px] right-7 h-[92px] bottom-20 sm:bottom-20 relative p-2 w-full border-2 border-black rounded-lg"></div>
           </div>
           <div className="text-sm sm:text-base">
-            <div className="bg-amber-100 left-8 sm:left-24 z-10 p-2 relative font-semibold w-full border-2 border-black rounded-lg">
+            <div className="bg-amber-100 h-[68px] left-8 text-center sm:left-24 z-10 p-2 relative font-semibold w-full border-2 border-black rounded-lg">
               {`${weatherData.days[2].datetime}: `}
               {`Temperature High ${weatherData.days[2].tempmax} `}
               <sup>o</sup>C,
               {` Low ${weatherData.days[2].tempmin} `}
               <sup>o</sup>C.
-              {` Wind speed ${meterPerSecondConverter(weatherData.days[2].windspeed)} m/s.`}
+              {` Wind speed ${meterPerSecondConverter(
+                weatherData.days[2].windspeed
+              )} m/s.`}
             </div>
-            <div className="bg-sky-100 left-11 sm:left-[110px] bottom-12 sm:bottom-14  p-2 relative font-semibold w-full border-2 border-black rounded-lg">
-              {`${weatherData.days[2].datetime}: `}
-              {`Temperature High ${weatherData.days[2].tempmax} `}
-              <sup>o</sup>C,
-              {` Low ${weatherData.days[2].tempmin} `}
-              <sup>o</sup>C.
-              {` Wind speed ${meterPerSecondConverter(weatherData.days[2].windspeed)} m/s.`}
-            </div>
+            <div className="bg-sky-100 h-[68px] left-11 sm:left-[108px] bottom-14 sm:bottom-14  p-2 relative font-semibold w-full border-2 border-black rounded-lg"></div>
           </div>
           <div className="hidden sm:contents ">
-            <div className="bg-sky-100 right-24 z-10 p-2 relative font-semibold w-full border-2 border-black rounded-lg">
+            <div className="bg-sky-100 text-center h-[68px] right-24 z-10 p-2 relative font-semibold w-full border-2 border-black rounded-lg">
               {`${weatherData.days[3].datetime}: `}
               {`Temperature High ${weatherData.days[3].tempmax} `}
               <sup>o</sup>C,
               {` Low ${weatherData.days[3].tempmin} `}
               <sup>o</sup>C.
-              {` Wind speed ${meterPerSecondConverter(weatherData.days[3].windspeed)} m/s.`}
+              {` Wind speed ${meterPerSecondConverter(
+                weatherData.days[3].windspeed
+              )} m/s.`}
             </div>
-            <div className="bg-rose-100 right-[82px] bottom-14  p-2 relative font-semibold w-full border-2 border-black rounded-lg">
-              {`${weatherData.days[3].datetime}: `}
-              {`Temperature High ${weatherData.days[3].tempmax} `}
-              <sup>o</sup>C,
-              {` Low ${weatherData.days[3].tempmin} `}
-              <sup>o</sup>C.
-              {` Wind speed ${meterPerSecondConverter(weatherData.days[3].windspeed)} m/s.`}
-            </div>
+            <div className="bg-rose-100 h-[68px] right-[84px] bottom-12  p-2 relative font-semibold w-full border-2 border-black rounded-lg"></div>
           </div>
         </>
       )}
