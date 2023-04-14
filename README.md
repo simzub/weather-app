@@ -24,9 +24,9 @@ If there is an error with the API call, such as an invalid city name or network 
 
 This app was built using the following technologies:
 
-Create React App (CRA) for bootstrapping the project <br />
-Axios for making HTTP requests to the OpenWeatherMap API <br />
-Redux for managing the app's state <br />
-React-Toastify for displaying error messages <br />
-TypeScript for type checking and enhanced code readability <br />
-Tailwind CSS for styling the app
+- Create React App (CRA) for bootstrapping the project <br />
+- Axios for making HTTP requests to the Visualcrossing API <br />
+- Redux for managing the app's state <br />
+- React-Toastify for displaying error messages <br />
+- TypeScript for type checking and enhanced code readability <br />
+- Tailwind CSS for styling the app
